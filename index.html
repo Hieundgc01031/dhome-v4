@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>D HOME VER4</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <script src="js/get-time.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo-header">
+            <img src="img/logo.png" alt="">
+        </div>
+    </header>
+
+    <div class="wrap-content wrap-content-home">
+        <div class="div-background-home" style="background-image: url('img/background/background-home1.jpg')">
+        </div>
+        <div class="div-aside-left div-aside">
+            <div class="div-content-aside div-content-aside-left">
+                <div class="item-activity">
+                    <a href="#">
+                        <img src="img/Light/light-on-w.png"/>
+                        <p>All off</p>
+                    </a>
+
+                </div>
+                <div class="item-activity">
+                    <img src="img/Light/light-on-w.png"/>
+                    <p>All off activity</p>
+                </div>
+                <div class="item-activity">
+                    <img src="img/Light/light-on-w.png"/>
+                    <p>All off activity</p>
+                </div>
+                <div class="item-activity">
+                    <img src="img/Light/light-on-w.png"/>
+                    <p>All off activity</p>
+                </div>
+                <div class="item-activity">
+                    <img src="img/Light/light-on-w.png"/>
+                    <p>All off activity</p>
+                </div>
+                <div class="item-activity">
+                    <img src="img/Light/light-on-w.png"/>
+                    <p>All off</p>
+                </div>
+            </div>
+        </div>
+        <div class="div-section-mid">
+            <div class="div-clock-time">
+                <div class="clock">
+                    <ul>
+                        <li id="hours"></li>
+                        <li id="dsd">:</li>
+                        <li id="min"></li>
+                        <li id="point">:</li>
+                        <li id="sec"></li>
+                    </ul>
+                    <div id="Date"></div>
+                </div>
+            </div>
+
+            <div class="div-control-condition">
+                <div class="div-number-info">
+                    <span>25</span><span>&deg;C</span>
+                    <span class="span-minus">-</span>
+                    <span>RH 20%</span>
+                </div>
+                <div class="div-control-info">
+                    <div class="div-plus">
+                        <p>
+                            <i class="fas fa-plus"></i>
+                        </p>
+                    </div>
+                    <div class="div-off">
+                        <p>
+                            <i class="fas fa-power-off"></i>
+                        </p>
+                    </div>
+                    <div class="div-minus">
+                        <p>
+                            <i class="fas fa-minus"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-aside-right div-aside div-content-aside-right">
+            <div class="div-content-aside">
+                <div class="div-content-aside">
+                    <div class="item-activity active">
+                        <a href="#">
+                            <img src="img/Light/light-on-w.png"/>
+                            <p>All off activity</p>
+                        </a>
+                    </div>
+                    <div class="item-activity">
+                        <a href="#">
+                            <img src="img/Light/light-on-w.png"/>
+                            <p>All off activity</p>
+                        </a></div>
+                    <div class="item-activity">
+                        <a href="#">
+                            <img src="img/Light/light-on-w.png"/>
+                            <p>All off activity</p>
+                        </a>
+                    </div>
+                    <div class="item-activity">
+                        <a href="#">
+                            <img src="img/Light/light-on-w.png"/>
+                            <p>All off activity</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear-both"></div>
+    </div>
+
+    <div class="menu-bottom">
+        <div class="center-align">
+            <div class="icon-menu-bottom">
+                <a href="#">
+                    <img src="img/icon-app/home.png"/>
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="icon-menu-bottom">
+                <a href="#">
+                    <img src="img/icon-app/call.png"/>
+                    <p>Camera</p>
+                </a>
+            </div>
+            <div class="icon-menu-bottom">
+                <a href="#">
+                    <img src="img/icon-app/home.png"/>
+                    <p>Notification</p>
+                </a>
+            </div>
+            <div class="icon-menu-bottom">
+                <a href="#">
+                    <img src="img/icon-app/call.png"/>
+                    <p>Setting</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        var vHeight = $(window).height();
+         topHeight = $('header').height();
+         botHeight = $('.menu-bottom').outerHeight();
+         midHeight = vHeight - topHeight -botHeight;
+         vWidth = $(window).width();
+         asiWidth = $('.div-aside').width();
+        $('.wrap-content-home').css('height', midHeight);
+        $('.div-background-home').css('height', midHeight);
+        $('.div-section-mid').css('height', midHeight);
+    });
+</script>
+</html>

@@ -68,13 +68,28 @@ header {
   bottom: 0;
   text-align: center;
   left: 0;
-  background-color: rgba(72, 73, 73, 0.6); }
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden; }
   .taskbar .center-align .div-icon-taskbar {
     width: 110px;
     display: inline-block; }
     .taskbar .center-align .div-icon-taskbar img {
       height: 30px;
       margin-top: 5px; }
+  .taskbar .div-blur {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 20%;
+    padding-top: 20%;
+    filter: blur(35px); }
 
 .wrap-content.wrap-content-home {
   padding: 0 25px; }
@@ -152,7 +167,7 @@ header {
           cursor: move; }
       .wrap-content.wrap-content-home .div-control-conditition .div-circle-point .info-condition {
         text-align: center;
-        padding-top: 50px; }
+        padding-top: 40px; }
         .wrap-content.wrap-content-home .div-control-conditition .div-circle-point .info-condition p {
           font-size: 15px;
           margin-top: 5px; }
@@ -162,6 +177,16 @@ header {
         .wrap-content.wrap-content-home .div-control-conditition .div-circle-point .info-condition .h4-deg-condition {
           font-size: 40px;
           padding-left: 5px; }
+        .wrap-content.wrap-content-home .div-control-conditition .div-circle-point .info-condition .div-line {
+          margin: 5px auto 0;
+          width: 70px;
+          background-color: #fff;
+          height: 2px; }
+        .wrap-content.wrap-content-home .div-control-conditition .div-circle-point .info-condition img {
+          text-align: center;
+          width: 50px;
+          height: auto;
+          margin-top: 5px; }
   .wrap-content.wrap-content-home .div-favorite-scences {
     margin-top: 15px;
     max-width: 335px; }
@@ -262,5 +287,121 @@ header {
   stroke-linecap: round; }
   .circle.circle-2 {
     stroke: #3dbcff; }
+
+.wrap-content .div-backgroud-room {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -1; }
+.wrap-content .div-content-room {
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin-top: 40px;
+  overflow: hidden; }
+  .wrap-content .div-content-room .div-empty-room {
+    padding-top: 70px;
+    margin: 0 auto;
+    width: 500px;
+    height: 100%;
+    text-align: center; }
+    .wrap-content .div-content-room .div-empty-room p {
+      font-size: 24px;
+      margin: 10px 0; }
+    .wrap-content .div-content-room .div-empty-room img {
+      height: 150px;
+      width: auto; }
+    .wrap-content .div-content-room .div-empty-room a {
+      display: inline-block; }
+      .wrap-content .div-content-room .div-empty-room a i {
+        font-size: 23px;
+        margin: 0 7px; }
+  .wrap-content .div-content-room .div-title-room-config {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    text-align: center; }
+    .wrap-content .div-content-room .div-title-room-config p {
+      font-size: 28px;
+      line-height: 1.6; }
+    .wrap-content .div-content-room .div-title-room-config .tittle-left {
+      position: absolute;
+      top: 5px;
+      left: 30px; }
+      .wrap-content .div-content-room .div-title-room-config .tittle-left img {
+        width: 35px;
+        height: 35px; }
+    .wrap-content .div-content-room .div-title-room-config .tittle-right {
+      position: absolute;
+      top: 5px;
+      right: 30px; }
+      .wrap-content .div-content-room .div-title-room-config .tittle-right img {
+        width: 35px;
+        height: 35px; }
+  .wrap-content .div-content-room .div-some-room {
+    height: 330px;
+    overflow: auto;
+    margin-top: 15px;
+    padding: 0 25px; }
+    .wrap-content .div-content-room .div-some-room .item-room {
+      padding-top: 10px;
+      width: 130px;
+      height: 130px;
+      background-color: #fff;
+      border-radius: 10px;
+      float: left;
+      margin: 10px;
+      text-align: center; }
+      .wrap-content .div-content-room .div-some-room .item-room img {
+        width: 75px;
+        height: auto; }
+      .wrap-content .div-content-room .div-some-room .item-room p {
+        color: #000;
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 5px; }
+  .wrap-content .div-content-room .div-room-config {
+    padding: 0 25px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; }
+    .wrap-content .div-content-room .div-room-config .config-left {
+      color: #000;
+      padding: 15px;
+      margin-top: 15px;
+      float: left;
+      width: 190px;
+      height: 320px;
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center; }
+      .wrap-content .div-content-room .div-room-config .config-left input[type='text'] {
+        border: 0;
+        outline: none;
+        border-bottom: 2px solid #356be7;
+        padding: 5px;
+        width: 100%;
+        color: #000;
+        font-size: 17px; }
+      .wrap-content .div-content-room .div-room-config .config-left img {
+        width: 120px;
+        height: auto;
+        margin: 50px 0; }
+      .wrap-content .div-content-room .div-room-config .config-left i {
+        color: #515151;
+        font-size: 18px; }
+    .wrap-content .div-content-room .div-room-config .config-right {
+      padding: 15px;
+      margin-top: 15px;
+      margin-left: 15px;
+      float: left;
+      width: 545px;
+      height: 320px;
+      background-color: #fff;
+      border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */

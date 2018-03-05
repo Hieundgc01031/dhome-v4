@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ROOM LIST</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="div-wifi">
+        <img src="img/header-icon/Wifi.png"/>
+    </div>
+    <div class="div-time">
+        <span>09:09</span>
+    </div>
+    <div class="div-battery">
+        <p>100</p>
+        <img align="middle" src="img/header-icon/Battery.png"/>
+        <div class="clear-both"></div>
+    </div>
+</header>
+
+
+<div class="wrap-content" >
+    <div class="div-background" style="background-image: url('img/background/background.jpg');"></div>
+    <div class="div-backgroud-room"></div>
+    <div class="div-content-room">
+
+        <div class="div-empty-room">
+            <img src="img/hieu-icon/door.png" height="512" width="512"/>
+            <p>Empty room !</p>
+            <p>Click <a href="#"><i class="fas fa-plus"></i></a> add new room.</p>
+        </div>
+
+        <div class="div-title-room-config">
+            <div class="tittle-left">
+                <a href="#">
+                    <img src="img/hieu-icon/Close.png"/>
+                </a>
+            </div>
+            <div class="tittle-center">
+                <p>Edit room</p>
+            </div>
+            <div class="tittle-right">
+                <a href="#">
+                    <img src="img/hieu-icon/Right.png"/>
+                </a>
+            </div>
+        </div>
+
+        <div class="div-some-room">
+            <div class="item-room">
+                <a href="#">
+                    <img src="img/Rooms/BathRoom.png" />
+                    <p>Phòng khách</p>
+                </a>
+            </div>
+            <div class="item-room">
+                <a href="#">
+                    <img src="img/Rooms/BathRoom.png" />
+                    <p>Phòng khách</p>
+                </a>
+            </div>
+            <div class="item-room">
+                <a href="#">
+                    <img src="img/Rooms/BathRoom.png" />
+                    <p>Phòng khách</p>
+                </a>
+            </div>
+            <div class="item-room">
+                <a href="#">
+                    <img src="img/Rooms/BathRoom.png" />
+                    <p>Phòng khách</p>
+                </a>
+            </div>
+            <div class="item-room">
+                <a href="#">
+                    <img src="img/Rooms/BathRoom.png" />
+                    <p>Phòng khách</p>
+                </a>
+            </div>
+            <div class="item-room">
+                <a href="#">
+                    <img src="img/Rooms/BathRoom.png" />
+                    <p>Phòng khách</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="taskbar">
+    <div class="div-blur" style="background-image: url('img/background/background.jpg');">
+
+    </div>
+    <div class="center-align">
+        <div class="div-icon-taskbar">
+            <a href="#"><img src="img/Tabbar/HOME.png" /></a>
+        </div>
+        <div class="div-icon-taskbar">
+            <a href="#"><img src="img/Tabbar/noti.png"/></a>
+        </div>
+        <div class="div-icon-taskbar">
+            <a href="#"><img src="img/Tabbar/HOME.png" /></a>
+        </div>
+        <div class="div-icon-taskbar">
+            <a href="#"><img src="img/Tabbar/noti.png"/></a>
+        </div>
+        <div class="div-icon-taskbar">
+            <a href="#"><img src="img/Tabbar/HOME.png" /></a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        if($(".item-room").length){
+            $('.div-empty-room').hide();
+        }
+        else {
+            $('.div-empty-room').show();
+        }
+    });
+</script>
+</html>

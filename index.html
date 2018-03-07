@@ -27,7 +27,6 @@
         </div>
     </header>
 
-
     <div class="wrap-content wrap-content-home" >
         <div class="div-background" style="background-image: url('img/background/background.jpg');"></div>
         <div class="div-the-weather">
@@ -131,7 +130,7 @@
         <div class="div-favorite-accessories">
             <h4>Favorite accessories</h4>
             <div class="div-content-item-accessories">
-                <div class="item-accessories active">
+                <div class="item-accessories item-lamp active">
                     <img class="on" src="img/House Hold/chandeliers.png" />
                     <img class="off" src="img/House Hold/Lamp.png" />
                     <p class="p-off">Off</p>
@@ -139,12 +138,12 @@
                     <h6 class="p-tittle">Lamp</h6>
                 </div>
 
-                <div class="item-accessories ">
+                <div class="item-accessories item-tivi active">
                     <img class="on" src="img/House Hold/chandeliers.png" />
                     <img class="off" src="img/House Hold/Lamp.png" />
                     <p class="p-off">Off</p>
-                    <p class="p-on">50%</p>
-                    <h6 class="p-tittle">Lamp</h6>
+                    <p class="p-on">On</p>
+                    <h6 class="p-tittle">Tivi</h6>
                 </div>
 
                 <div class="item-accessories active">
@@ -195,6 +194,86 @@
             </div>
         </div>
     </div>
+    <div class="div-bgc-opa"></div>
+    <div class="div-control-tivi div-control-accesories">
+        <div class="div-control-menu">
+            <div class="div-tittle-tivi">
+                <div class="div-name-tivi">
+                    <p> <img align="middle" src="img/Light/Lamp.png" height="40" width="40"/>
+                    Tivi phòng khách</p>
+                </div>
+                <div class="div-on-off-tivi">
+                    <i class="fas fa-power-off"></i>
+                </div>
+                <div class="clear-both"></div>
+            </div>
+
+            <div class="div-large-circle">
+                <div class="div-small-circle"></div>
+                <i class="fas fa-chevron-up"></i>
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="div-some-control">
+                <div class="div-back-control">Back</div>
+                <div class="div-menu-control">Menu</div>
+                <div class="div-updown updown-volume">
+                    <i class="fas fa-chevron-up"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="div-volume div-middle">Vol</div>
+                </div>
+                <div class="div-updown updown-prog">
+                    <i class="fas fa-chevron-up"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="div-prog div-middle">Prog</div>
+                </div>
+            </div>
+        </div>
+        <div class="div-control-number">
+            <div class="div-total-number">
+                <div class="div-number">1</div>
+                <div class="div-number">2</div>
+                <div class="div-number">3</div>
+                <div class="div-number">4</div>
+                <div class="div-number">5</div>
+                <div class="div-number">6</div>
+                <div class="div-number">7</div>
+                <div class="div-number">8</div>
+                <div class="div-number">9</div>
+                <div class="div-number number0">0</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="div-control-lamp div-control-accesories">   <!-- DEN -->
+        <div class="tittle-accsesories">
+            <p class="name-acces-control">Điều khiển đèn</p>
+            <p class="p-close-acces-control">Đóng</p>
+            <div class="clear-both"></div>
+        </div>
+        <div class="div-name-accesories">
+            <p class="p-name-accses">
+                <img align="middle" src="img/Light/DenTha.png" />
+                Đèn thả
+            </p>
+            <div class="div-toggle-checkbox">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="clear-both"></div>
+        </div>
+        <div class="content-bright-lamp">
+            <input class="brightness-lamp" type="range" value="">
+            <div class="div-percent-bright">
+                80  %
+            </div>
+            <div class="clear-both"></div>
+        </div>
+    </div>      <!-- DEN -->
 </body>
 <script>
     $(document).ready(function () {
@@ -207,6 +286,64 @@
            $(this).toggleClass('active');
         });
 
+        //Hide tivi control
+
+        $('.item-tivi').click(function () {
+            $('.div-control-tivi').animate({left: 0}, 400);
+            $('.div-bgc-opa').show();
+            $(this).toggleClass('active');
+        });
+        $('.div-on-off-tivi').click(function () {
+            $('.item-tivi').toggleClass('active');
+        });
+
+        // DEN
+        var old_bri = $('.brightness-lamp').val();
+        $('.div-percent-bright').text(old_bri+"%");
+
+        $('.brightness-lamp').click(function () {
+            var val = $(this).val();
+            $('.div-percent-bright').text(val+"%");
+        });
+
+        $('.brightness-lamp').on('touchstart', function(e){
+            var bri_this = $(this);
+            var handlers = {
+                touchmove : function(e){
+                    var bright = bri_this.val();
+                    $('.div-percent-bright').text(bright+"%");
+                },
+                touchend : function(e){
+                    $(this).off(handlers);
+                }
+            };
+            $(document).on(handlers);
+        });
+
+        $('.p-close-acces-control').click(function () {
+            $('.div-bgc-opa').hide();
+            $('.div-control-lamp').animate({bottom: '-100%'}, 400);
+        });
+
+        $('.item-lamp').on('touchstart',function (e) {
+            var val = 0;
+            setint = setInterval(function () {
+                val = val +1;
+                if(val > 3){
+                    $('.div-bgc-opa').show();
+                    $('.div-control-lamp').animate({bottom: 0}, 400);
+                }
+            },200);
+        });
+        $('.item-lamp').on("touchend", function () {
+            clearInterval(setint);
+        });
+
+        $(document).on('click', '.div-bgc-opa', function () {
+            $(this).hide();
+            $('.div-control-tivi').animate({left: '-100%'}, 400);
+            $('.div-control-lamp').animate({bottom: '-100%'}, 400);
+        });
 
         var circle1 = $('.div-circle-point');
             picker1 = $('.reg-point');
@@ -297,5 +434,7 @@
     // //     if(event.target == this) mousedown(event)
     // //
     // // })
+
+
 </script>
 </html>

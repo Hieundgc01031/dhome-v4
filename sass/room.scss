@@ -1,7 +1,7 @@
 .wrap-content{
   .div-backgroud-room{
     width: 100%;
-    height: 400px;
+    height: 410px;
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0px;
@@ -12,8 +12,8 @@
   .div-content-room{
     display: block;
     width: 100%;
-    height: 400px;
-    margin-top: 40px;
+    height: 410px;
+    margin-top: 30px;
     overflow: hidden;
 
     .div-empty-room{
@@ -46,7 +46,7 @@
       text-align: center;
       p{
         font-size: 28px;
-        line-height: 1.6;
+        line-height: 1.8;
       }
       .tittle-left{
         position: absolute;
@@ -69,9 +69,9 @@
     }
 
     .div-some-room{
-      height: 330px;
+      height: 350px;
       overflow: auto;
-      margin-top: 15px;
+      margin-top: 5px;
       padding: 0 25px;
       .item-room{
         padding-top: 10px;
@@ -104,10 +104,10 @@
       .config-left{
         color: #000;
         padding: 15px;
-        margin-top: 15px;
+        margin-top: 10px;
         float: left;
         width: 190px;
-        height: 320px;
+        height: 330px;
         background-color: #fff;
         border-radius: 10px;
         text-align: center;
@@ -126,11 +126,140 @@
           margin: 50px 0;
         }
         i{
+          padding: 10px;
           color: #515151;
           font-size: 18px;
         }
       }
       .config-right{
+        overflow: auto;
+        padding: 15px;
+        margin-top: 10px;
+        margin-left: 15px;
+        float: left;
+        width: 545px;
+        height: 330px;
+        background-color: #fff;
+        border-radius: 10px;
+        color: #000;
+        .div-equipment-scences{
+          height: auto;
+          p{
+            color: #000;
+            font-size: 20px;
+          }
+
+          .div-equipment{
+            padding:0 10px 10px;
+            float: left;
+            margin-right: 70px;
+            &.active{
+              border-bottom: 2px solid $light-blue;
+              p{
+                color: $light-blue;;
+              }
+            }
+          }
+          .div-scences{
+            padding:0 10px 10px;
+            float: left;
+            &.active{
+              border-bottom: 2px solid $light-blue;
+              p{
+                color: $light-blue;;
+              }
+            }
+          }
+          .div-icon-plus{
+            float: right;
+            text-align: right;
+            a{
+              &.a-scences{
+                display: none;
+              }
+              i{
+                color: $light-blue;
+                font-size: 28px;
+              }
+            }
+          }
+        }
+
+        .content-config-right{
+          .no-item{
+            margin: 40px 50px;
+            font-size: 30px;
+          }
+          color: #000;
+          .div-delete{
+            p{
+              float: right;
+              margin-top: 10px;
+              font-size: 25px;
+              border-radius: 5px;
+              padding: 5px 15px;
+              background-color: rgba(113, 105, 105, 0.1);
+              color: #c10808;
+            }
+          }
+          p{
+            color: #000;
+          }
+          .content-equipment{
+            ul{
+              .p-tittle{
+                font-size: 20px;
+                margin: 10px 0;
+              }
+              li{
+                text-align: center;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                display: inline-block;
+                width: 120px;
+                overflow: hidden;
+                border-radius: 4px;
+                padding: 3px 3px 5px;
+                box-shadow: 0 0 2px 2px rgba(0, 0, 0 , 0.2);
+                p{
+                  font-size: 16px;
+                }
+                img{
+                  width: 45px;
+                  height: 45px;
+                }
+              }
+            }
+          }
+          .content-scences{
+            display: none;
+            ul{
+              margin-top: 10px;
+              li{
+                display: inline-block;
+                margin: 7px 5px;
+                width: 155px;
+                img{
+                  float: left;
+                  width: 50px;
+                  height: 50px;
+                }
+                p{
+                  float: left;
+                  overflow: hidden;
+                  width: 100px;
+                  padding: 3px;
+                  font-size: 15px;
+                  max-height: 38px;
+                  margin: 5px 0 0 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .change-icon-right{
+        position: relative;
         padding: 15px;
         margin-top: 15px;
         margin-left: 15px;
@@ -139,8 +268,42 @@
         height: 320px;
         background-color: #fff;
         border-radius: 10px;
+        color: #000;
+        display: none;
+        .tittle-change-icon-right{
+          p{
+            border-bottom: 2px solid $light-blue;
+            padding: 0 5px 5px;
+            color: #000;
+            font-size: 20px;
+          }
+        }
+        .div-some-icon-room{
+          height: 230px;
+          overflow: auto;
+          img{
+            width: 70px;
+            height: 70px;
+            margin: 15px 25px;
+            display: inline-block;
+          }
+        }
+        .div-config-icon{
+          width: 100%;
+          border-top: 2px solid $light-blue;
+          text-align: right;
+          p{
+            color: $blue-color;
+            width: auto;
+            padding: 9px 10px;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
       }
     }
 
   }
 }
+

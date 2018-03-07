@@ -1,35 +1,24 @@
 /*
 Error: Undefined variable: "$blue-color".
-        on line 127 of D:\Hieu\gitReact\dhome-v4\sass\setting.scss
+        on line 79 of D:\Hieu\gitReact\dhome-v4\sass\setting.scss
 
-122:                     &.active{
-123:                       img.check-icon{
-124:                         display: block;
-125:                       }
-126:                       p{
-127:                         color: $blue-color;
-128:                         font-weight: bold;
-129:                       }
-130:                     }
-131:                   }
-132:                 }
+74:                 .item-group{
+75:                   margin-right: -15px;
+76:                   p.p-title-group{
+77:                     padding: 5px 0 10px;
+78:                     &.active{
+79:                       color: $blue-color;
+80:                       .fa-chevron-down{
+81:                         display: inline-block;
+82:                       }
+83:                       .fa-chevron-right{
+84:                         display: none;
 
 Backtrace:
-D:\Hieu\gitReact\dhome-v4\sass\setting.scss:127
+D:\Hieu\gitReact\dhome-v4\sass\setting.scss:79
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -183,4 +172,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue-color\".\A         on line 127 of D:\Hieu\gitReact\dhome-v4\sass\setting.scss\A \A 122:                     &.active{\A 123:                       img.check-icon{\A 124:                         display: block;\A 125:                       }\A 126:                       p{\A 127:                         color: $blue-color;\A 128:                         font-weight: bold;\A 129:                       }\A 130:                     }\A 131:                   }\A 132:                 }"; }
+  content: "Error: Undefined variable: \"$blue-color\".\A         on line 79 of D:\Hieu\gitReact\dhome-v4\sass\setting.scss\A \A 74:                 .item-group{\A 75:                   margin-right: -15px;\A 76:                   p.p-title-group{\A 77:                     padding: 5px 0 10px;\A 78:                     &.active{\A 79:                       color: $blue-color;\A 80:                       .fa-chevron-down{\A 81:                         display: inline-block;\A 82:                       }\A 83:                       .fa-chevron-right{\A 84:                         display: none;"; }

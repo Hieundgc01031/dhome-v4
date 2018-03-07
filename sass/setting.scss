@@ -9,8 +9,9 @@
       background-color: #ededed;
       border-top-right-radius: 7px;
       border-top-left-radius: 7px;
+      margin-top: 0;
       &.setting-left{
-        width: 30%;
+        width: 25%;
         border-right: 0.5px solid #343434;
         ul{
           overflow: auto;
@@ -43,15 +44,25 @@
         }
       }
       &.setting-right{
-        width: 70%;
+        position: relative;
+        width: 75%;
         .div-content-setting-right{
+          position: relative;
+          height: 370px;
           .div-item{
-            padding: 25px;
+            height: 350px;
+            overflow: auto;
+            padding: 15px 15px 0;
             display: none;
             p.p-main-right{
               font-size: 16px;
               font-weight: bold;
               color: #3a3a3a;
+            }
+            p.p-main-right-tittle{
+              font-size: 16px;
+              color: #000;
+              font-weight: bold;
             }
             .div-main-background{
               border-radius: 8px;
@@ -59,6 +70,84 @@
               width: 100%;
               padding: 10px 15px;
               border: 1px solid #ccc;
+              &.setting-list-group{
+                .item-group{
+                  margin-right: -15px;
+                  p.p-title-group{
+                    padding: 5px 0 10px;
+                    &.active{
+                      color: $blue-color;
+                      .fa-chevron-down{
+                        display: inline-block;
+                      }
+                      .fa-chevron-right{
+                        display: none;
+                      }
+                    }
+                    i{
+                      color: #000;
+                      &.fa-chevron-down{
+                        display: none;
+                      }
+                    }
+                  }
+                  ul{
+                    display: none;
+                    margin-bottom: 10px;
+                    li{
+                      overflow: hidden;
+                      border-radius: 4px;
+                      padding: 4px 3px 5px;
+                      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+                      display: inline-block;
+                      width: 90px;
+                      height: 80px;
+                      margin: 6px 16px 6px 1px;
+                      text-align: center;
+                      img{
+                        width: 35px;
+                        height: 35px;
+                      }
+                      p{
+                        max-height: 32px;
+                        font-size: 14px;
+                        color: #000;
+                        display: block;
+                        overflow: hidden;
+                      }
+                      &.active{
+                        box-shadow: 0 0 2px 2px rgba(0, 16, 255, 0.6);
+                      }
+
+                    }
+                  }
+                  .edit-group{
+                    text-align: center;
+                    color: #e80000;
+                    border-radius: 5px;
+                    padding: 8px 10px;
+                    border: 2px solid #e80000;
+                    font-size: 17px;
+                    width: 70%;
+                    margin: 7px auto;
+                  }
+                }
+              }
+              &.setting-list-switch{
+                &:first-child{
+                  margin-bottom: 10px;
+                }
+                ul{
+                  li{
+                    img{
+                      float: left;
+                    }
+                    p.p-name-switch{
+                      float: left;
+                    }
+                  }
+                }
+              }
             }
             &.active{
               display: block;
@@ -132,53 +221,8 @@
                 }
               }
             }
-            .setting-list-group{
-              margin: 10px 0 0;
-              .item-group{
-                margin-right: -10px;
-                p.p-title-group{
-                  font-size: 16px;
-                  color: #000;
-                  font-weight: bold;
-                  i{
-                    color: #000;
-                    &.fa-chevron-down{
-                      display: none;
-                    }
-                  }
-                }
-                ul{
-                  li{
-                    overflow: hidden;
-                    border-radius: 4px;
-                    padding: 3px 3px 5px;
-                    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-                    display: inline-block;
-                    width: 150px;
-                    margin: 5px 10px 5px 0;
-                    img{
-                      width: 40px;
-                      height: 40px;
-                      float: left;
-                    }
-                    p{
-                      height: auto;
-                      font-size: 14px;
-                      color: #000;
-                      margin-left: 15px;
-                      margin-top: 10px;
-                      max-height: 32px;
-                      overflow: hidden;
-                    }
-                    &:first-child{
-                      border: 0;
-                    }
-                  }
-                }
-              }
-            }
-          }
 
+          }
         }
       }
       .tittle-setting{
@@ -186,11 +230,110 @@
         border-bottom: 1px solid #b1b1b1;
         text-align: center;
         height: 40px;
+        position: relative;
         p{
           line-height: 2.2;
           font-size: 17px;
           font-weight: bold;
           color: #797979;
+        }
+        .p-edit-setting{
+          position: absolute;
+          top: 0px;
+          right: 25px;
+          border-radius: 4px;
+          padding: 0px 10px;
+          display: none;
+        }
+        .p-save-setting{
+          position: absolute;
+          top: 0px;
+          right: 25px;
+          border-radius: 4px;
+          padding: 0px 10px;
+          display: none;
+        }
+        .p-back-setting{
+          position: absolute;
+          top: 0px;
+          left: 25px;
+          border-radius: 4px;
+          padding: 0px 10px;
+          display: none;
+          i{
+            color: #797979;
+            font-size: 16px;
+            margin-right: 3px;
+          }
+        }
+
+      }
+      .modal-main-setting{
+        position: absolute;
+        background-color: #ededed;
+        padding: 15px;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        &.modal-setting-device{
+          display: none;
+          .div-main-background{
+            height: 325px;
+          }
+          .div-device-setting{
+            overflow: hidden;
+            border-radius: 4px;
+            padding: 4px 3px 5px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+            float: left;
+            width: 100px;
+            height: 95px;
+            margin: 5px 15px 5px 1px;
+            text-align: center;
+            background-color: #fff;
+            img{
+              width: 40px;
+              height: 40px;
+            }
+            p{
+              max-height: 32px;
+              font-size: 14px;
+              color: #000;
+              display: block;
+              overflow: auto;
+            }
+          }
+          .div-content-setting-device{
+            overflow: auto;
+            border-radius: 4px;
+            float: left;
+            margin-top: 5px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+            width: 420px;
+            padding: 10px;
+            height: 295px;
+            input{
+              border: 0;
+              font-size: 16px;
+              width: 375px;
+              padding: 5px 5px;
+              outline: none;
+              color: #000;
+              border-bottom: 2px solid $blue-color;
+              margin-bottom: 15px;
+            }
+            p{
+              padding: 5px 0;
+              color: #000;
+              font-size: 18px;
+            }
+            .some-icon-device{
+              img{
+                margin: 8px 11px;
+              }
+            }
+          }
         }
       }
     }

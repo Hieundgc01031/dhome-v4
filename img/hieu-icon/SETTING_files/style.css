@@ -853,10 +853,9 @@ header {
     float: left;
     background-color: #ededed;
     border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
-    margin-top: 0; }
+    border-top-left-radius: 7px; }
     .wrap-content .content-setting .the-setting.setting-left {
-      width: 25%;
+      width: 30%;
       border-right: 0.5px solid #343434; }
       .wrap-content .content-setting .the-setting.setting-left ul {
         overflow: auto;
@@ -882,226 +881,115 @@ header {
             .wrap-content .content-setting .the-setting.setting-left ul li.active p {
               color: #fff; }
     .wrap-content .content-setting .the-setting.setting-right {
-      position: relative;
-      width: 75%; }
-      .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right {
-        position: relative;
-        height: 370px; }
-        .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item {
-          height: 350px;
-          overflow: auto;
-          padding: 15px 15px 0;
-          display: none; }
-          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item p.p-main-right {
+      width: 70%; }
+      .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item {
+        padding: 25px;
+        display: none; }
+        .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item p.p-main-right {
+          font-size: 16px;
+          font-weight: bold;
+          color: #3a3a3a; }
+        .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background {
+          border-radius: 8px;
+          background-color: #fff;
+          width: 100%;
+          padding: 10px 15px;
+          border: 1px solid #ccc; }
+        .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item.active {
+          display: block; }
+        .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-on-off-wifi {
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          border-radius: 8px;
+          background-color: #fff;
+          width: 100%;
+          padding: 10px 15px;
+          border: 1px solid #ccc; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-on-off-wifi p {
+            color: #000;
+            float: left;
             font-size: 16px;
             font-weight: bold;
-            color: #3a3a3a; }
-          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item p.p-main-right-tittle {
-            font-size: 16px;
-            color: #000;
-            font-weight: bold; }
-          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background {
-            border-radius: 8px;
-            background-color: #fff;
-            width: 100%;
-            padding: 10px 15px;
-            border: 1px solid #ccc; }
-            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group {
-              margin-right: -15px; }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group {
-                padding: 5px 0 10px; }
-                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group.active {
-                  color: #356ad7; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group.active .fa-chevron-down {
-                    display: inline-block; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group.active .fa-chevron-right {
-                    display: none; }
-                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group i {
-                  color: #000; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group i.fa-chevron-down {
-                    display: none; }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul {
-                display: none;
-                margin-bottom: 10px; }
-                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul li {
-                  overflow: hidden;
-                  border-radius: 4px;
-                  padding: 4px 3px 5px;
-                  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-                  display: inline-block;
-                  width: 90px;
-                  height: 80px;
-                  margin: 6px 16px 6px 1px;
-                  text-align: center; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul li img {
-                    width: 35px;
-                    height: 35px; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul li p {
-                    max-height: 32px;
-                    font-size: 14px;
-                    color: #000;
-                    display: block;
-                    overflow: hidden; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul li.active {
-                    box-shadow: 0 0 2px 2px rgba(0, 16, 255, 0.6); }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group .edit-group {
-                text-align: center;
-                color: #e80000;
-                border-radius: 5px;
-                padding: 8px 10px;
-                border: 2px solid #e80000;
-                font-size: 17px;
-                width: 70%;
-                margin: 7px auto; }
-            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-switch:first-child {
-              margin-bottom: 10px; }
-            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-switch ul li img {
-              float: left; }
-            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-switch ul li p.p-name-switch {
-              float: left; }
-          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item.active {
-            display: block; }
-          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-on-off-wifi {
-            -webkit-border-radius: 8px;
-            -moz-border-radius: 8px;
-            border-radius: 8px;
-            background-color: #fff;
-            width: 100%;
-            padding: 10px 15px;
-            border: 1px solid #ccc; }
-            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-on-off-wifi p {
-              color: #000;
+            line-height: 1.6; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-on-off-wifi .div-toggle-checkbox {
+            float: right; }
+        .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network > p {
+          margin: 15px 10px 10px; }
+        .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul {
+          height: auto;
+          background: #fff;
+          border-radius: 8px;
+          border: 1px solid #ccc; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network {
+            position: relative;
+            padding: 10px 20px 10px 25px;
+            border-top: 1px solid #999999; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network img.check-icon {
+              position: absolute;
+              top: 11px;
+              left: 7px;
+              width: 16px;
+              height: 16px;
+              display: none; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network p {
               float: left;
-              font-size: 16px;
-              font-weight: bold;
-              line-height: 1.6; }
-            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-on-off-wifi .div-toggle-checkbox {
+              color: #000;
+              font-size: 17px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network .right-icon {
               float: right; }
-          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network > p {
-            margin: 15px 10px 10px; }
-          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul {
-            height: auto;
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid #ccc; }
-            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network {
-              position: relative;
-              padding: 10px 20px 10px 25px;
-              border-top: 1px solid #999999; }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network img.check-icon {
-                position: absolute;
-                top: 11px;
-                left: 7px;
-                width: 16px;
-                height: 16px;
-                display: none; }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network p {
-                float: left;
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network .right-icon img {
+                height: 20px;
+                width: 20px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network:first-child {
+              border-top: 0; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network.active img.check-icon {
+              display: block; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network.active p {
+              color: #356ad7;
+              font-weight: bold; }
+        .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .setting-list-group {
+          margin: 10px 0 0; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .setting-list-group .item-group {
+            margin-right: -10px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .setting-list-group .item-group p.p-title-group {
+              font-size: 16px;
+              color: #000;
+              font-weight: bold; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .setting-list-group .item-group p.p-title-group i {
+                color: #000; }
+                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .setting-list-group .item-group p.p-title-group i.fa-chevron-down {
+                  display: none; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .setting-list-group .item-group ul li {
+              overflow: hidden;
+              border-radius: 4px;
+              padding: 3px 3px 5px;
+              box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+              display: inline-block;
+              width: 150px;
+              margin: 5px 10px 5px 0; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .setting-list-group .item-group ul li img {
+                width: 40px;
+                height: 40px;
+                float: left; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .setting-list-group .item-group ul li p {
+                height: 20px;
+                font-size: 14px;
                 color: #000;
-                font-size: 17px; }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network .right-icon {
-                float: right; }
-                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network .right-icon img {
-                  height: 20px;
-                  width: 20px; }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network:first-child {
-                border-top: 0; }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network.active img.check-icon {
-                display: block; }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network.active p {
-                color: #356ad7;
-                font-weight: bold; }
+                margin-left: 15px;
+                display: block;
+                max-height: 32px;
+                overflow: hidden; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .setting-list-group .item-group ul li:first-child {
+                border: 0; }
     .wrap-content .content-setting .the-setting .tittle-setting {
       box-shadow: 0px -10px 20px 0px rgba(181, 173, 173, 0.55) inset;
       border-bottom: 1px solid #b1b1b1;
       text-align: center;
-      height: 40px;
-      position: relative; }
+      height: 40px; }
       .wrap-content .content-setting .the-setting .tittle-setting p {
         line-height: 2.2;
         font-size: 17px;
         font-weight: bold;
         color: #797979; }
-      .wrap-content .content-setting .the-setting .tittle-setting .p-edit-setting {
-        position: absolute;
-        top: 0px;
-        right: 25px;
-        border-radius: 4px;
-        padding: 0px 10px;
-        display: none; }
-      .wrap-content .content-setting .the-setting .tittle-setting .p-save-setting {
-        position: absolute;
-        top: 0px;
-        right: 25px;
-        border-radius: 4px;
-        padding: 0px 10px;
-        display: none; }
-      .wrap-content .content-setting .the-setting .tittle-setting .p-back-setting {
-        position: absolute;
-        top: 0px;
-        left: 25px;
-        border-radius: 4px;
-        padding: 0px 10px;
-        display: none; }
-        .wrap-content .content-setting .the-setting .tittle-setting .p-back-setting i {
-          color: #797979;
-          font-size: 16px;
-          margin-right: 3px; }
-    .wrap-content .content-setting .the-setting .modal-main-setting {
-      position: absolute;
-      background-color: #ededed;
-      padding: 15px;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%; }
-      .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device {
-        display: none; }
-        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-main-background {
-          height: 325px; }
-        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-device-setting {
-          overflow: hidden;
-          border-radius: 4px;
-          padding: 4px 3px 5px;
-          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-          float: left;
-          width: 100px;
-          height: 95px;
-          margin: 5px 15px 5px 1px;
-          text-align: center;
-          background-color: #fff; }
-          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-device-setting img {
-            width: 40px;
-            height: 40px; }
-          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-device-setting p {
-            max-height: 32px;
-            font-size: 14px;
-            color: #000;
-            display: block;
-            overflow: auto; }
-        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-content-setting-device {
-          overflow: auto;
-          border-radius: 4px;
-          float: left;
-          margin-top: 5px;
-          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-          width: 420px;
-          padding: 10px;
-          height: 295px; }
-          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-content-setting-device input {
-            border: 0;
-            font-size: 16px;
-            width: 375px;
-            padding: 5px 5px;
-            outline: none;
-            color: #000;
-            border-bottom: 2px solid #356ad7;
-            margin-bottom: 15px; }
-          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-content-setting-device p {
-            padding: 5px 0;
-            color: #000;
-            font-size: 18px; }
-          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-content-setting-device .some-icon-device img {
-            margin: 8px 11px; }
 
 /*# sourceMappingURL=style.css.map */

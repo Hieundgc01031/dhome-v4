@@ -9,7 +9,7 @@
   box-sizing: border-box;
   font-size: 14px;
   font-family: helveticaneue;
-  color: #fff;
+  //color: #fff;
 }
 body{
   height: 100vh;
@@ -92,6 +92,10 @@ a{
   clear: both;
 }
 
+.only-border-bottom{
+  border: 0;
+  border-bottom: 2px solid $blue-color;
+}
 header{
   width: 100%;
   height: 30px;
@@ -407,7 +411,6 @@ header{
         line-height: 1.6;
         font-weight: bold;
         font-size: 19px;
-        color: #000;
       }
       .div-toggle-checkbox{
         float: right;
@@ -460,7 +463,6 @@ header{
       }
       .div-percent-bright{
         float: right;
-        color: #333;
         font-size: 16px;
         margin-top: 5px;
       }

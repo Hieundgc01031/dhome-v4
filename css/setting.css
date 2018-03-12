@@ -1,46 +1,24 @@
 /*
 Error: Undefined variable: "$blue-color".
-        on line 79 of D:\Hieu\gitReact\dhome-v4\sass\setting.scss
+        on line 143 of D:\Hieu\gitReact\dhome-v4\sass\setting.scss
 
-74:                 .item-group{
-75:                   margin-right: -15px;
-76:                   p.p-title-group{
-77:                     padding: 5px 0 10px;
-78:                     &.active{
-79:                       color: $blue-color;
-80:                       .fa-chevron-down{
-81:                         display: inline-block;
-82:                       }
-83:                       .fa-chevron-right{
-84:                         display: none;
+138:                 }
+139:               }
+140:               p.p-title-group{
+141:                 padding: 5px 0 10px;
+142:                 &.active{
+143:                   color: $blue-color;
+144:                   .fa-chevron-down{
+145:                     display: inline-block;
+146:                   }
+147:                   .fa-chevron-right{
+148:                     display: none;
 
 Backtrace:
-D:\Hieu\gitReact\dhome-v4\sass\setting.scss:79
+D:\Hieu\gitReact\dhome-v4\sass\setting.scss:143
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -172,4 +150,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue-color\".\A         on line 79 of D:\Hieu\gitReact\dhome-v4\sass\setting.scss\A \A 74:                 .item-group{\A 75:                   margin-right: -15px;\A 76:                   p.p-title-group{\A 77:                     padding: 5px 0 10px;\A 78:                     &.active{\A 79:                       color: $blue-color;\A 80:                       .fa-chevron-down{\A 81:                         display: inline-block;\A 82:                       }\A 83:                       .fa-chevron-right{\A 84:                         display: none;"; }
+  content: "Error: Undefined variable: \"$blue-color\".\A         on line 143 of D:\Hieu\gitReact\dhome-v4\sass\setting.scss\A \A 138:                 }\A 139:               }\A 140:               p.p-title-group{\A 141:                 padding: 5px 0 10px;\A 142:                 &.active{\A 143:                   color: $blue-color;\A 144:                   .fa-chevron-down{\A 145:                     display: inline-block;\A 146:                   }\A 147:                   .fa-chevron-right{\A 148:                     display: none;"; }

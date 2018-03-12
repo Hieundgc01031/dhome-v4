@@ -6,8 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 14px;
-  font-family: helveticaneue;
-  color: #fff; }
+  font-family: helveticaneue; }
 
 body {
   height: 100vh;
@@ -69,6 +68,10 @@ a {
 
 .clear-both {
   clear: both; }
+
+.only-border-bottom {
+  border: 0;
+  border-bottom: 2px solid #356ad7; }
 
 header {
   width: 100%;
@@ -325,8 +328,7 @@ header {
       float: left;
       line-height: 1.6;
       font-weight: bold;
-      font-size: 19px;
-      color: #000; }
+      font-size: 19px; }
     .div-control-accesories.div-control-lamp .div-name-accesories .div-toggle-checkbox {
       float: right;
       margin-top: 5px; }
@@ -369,7 +371,6 @@ header {
         margin-top: -15px; }
     .div-control-accesories.div-control-lamp .content-bright-lamp .div-percent-bright {
       float: right;
-      color: #333;
       font-size: 16px;
       margin-top: 5px; }
 
@@ -898,52 +899,80 @@ header {
             color: #3a3a3a; }
           .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item p.p-main-right-tittle {
             font-size: 16px;
-            color: #000;
             font-weight: bold; }
           .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background {
             border-radius: 8px;
             background-color: #fff;
             width: 100%;
             padding: 10px 15px;
-            border: 1px solid #ccc; }
+            border: 1px solid #ccc;
+            overflow: auto; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-device {
+              overflow: hidden;
+              border-radius: 4px;
+              padding: 4px 3px 5px;
+              box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+              display: inline-block;
+              width: 90px;
+              height: 80px;
+              margin: 6px 16px 6px 1px;
+              text-align: center; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-device img {
+                width: 35px;
+                height: 35px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-device p {
+                max-height: 32px;
+                font-size: 14px;
+                display: block;
+                overflow: hidden; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-device.active {
+                box-shadow: 0 0 2px 2px rgba(0, 16, 255, 0.6); }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-device.li-add-device i {
+                color: #ccc;
+                font-size: 45px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-device.li-add-device p.p-add-device {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 5px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-scence {
+              display: inline-block;
+              width: 90px;
+              height: 80px;
+              margin: 6px 16px 6px 1px;
+              text-align: center; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-scence p {
+                overflow: hidden;
+                height: 32px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-scence img {
+                width: 50px;
+                height: 50px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-scence .div-plus {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 1px solid #333;
+                margin: 0 auto; }
+                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-scence .div-plus i {
+                  font-size: 30px;
+                  margin-top: 9px;
+                  color: #ccc; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background ul li.li-scence p.p-add-scence {
+                font-weight: bold; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background p.p-title-group {
+              padding: 5px 0 10px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background p.p-title-group.active {
+                color: #356ad7; }
+                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background p.p-title-group.active .fa-chevron-down {
+                  display: inline-block; }
+                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background p.p-title-group.active .fa-chevron-right {
+                  display: none; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background p.p-title-group i.fa-chevron-down {
+                display: none; }
             .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group {
               margin-right: -15px; }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group {
-                padding: 5px 0 10px; }
-                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group.active {
-                  color: #356ad7; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group.active .fa-chevron-down {
-                    display: inline-block; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group.active .fa-chevron-right {
-                    display: none; }
-                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group i {
-                  color: #000; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group p.p-title-group i.fa-chevron-down {
-                    display: none; }
-              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul {
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul.ul-item-group {
                 display: none;
                 margin-bottom: 10px; }
-                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul li {
-                  overflow: hidden;
-                  border-radius: 4px;
-                  padding: 4px 3px 5px;
-                  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-                  display: inline-block;
-                  width: 90px;
-                  height: 80px;
-                  margin: 6px 16px 6px 1px;
-                  text-align: center; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul li img {
-                    width: 35px;
-                    height: 35px; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul li p {
-                    max-height: 32px;
-                    font-size: 14px;
-                    color: #000;
-                    display: block;
-                    overflow: hidden; }
-                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group ul li.active {
-                    box-shadow: 0 0 2px 2px rgba(0, 16, 255, 0.6); }
               .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group .item-group .edit-group {
                 text-align: center;
                 color: #e80000;
@@ -953,12 +982,76 @@ header {
                 font-size: 17px;
                 width: 70%;
                 margin: 7px auto; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-switch .item-group {
+              margin-right: -15px; }
             .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-switch:first-child {
               margin-bottom: 10px; }
-            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-switch ul li img {
-              float: left; }
-            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-switch ul li p.p-name-switch {
-              float: left; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-switch ul.ul-switch-group {
+              display: none; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-switch ul.ul-switch-group > p {
+                font-size: 15px;
+                font-weight: bold;
+                padding: 10px 10px 5px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-switch .p-title-group {
+              padding: 5px 0; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group-scence .item-group {
+              margin-right: -15px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group-scence .item-group ul {
+                display: none; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-group-scence .item-group {
+              margin-right: -15px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-scence .item-group {
+              margin-right: -15px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-scence .item-group .p-main-right-tittle {
+                padding: 5px 0 10px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-list-scence .item-group ul.ul-item-scence li.active p {
+                font-weight: bold;
+                color: #1393ff; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off {
+              margin: 0 0 10px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off .p-title-group {
+                padding: 5px 0; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off ul {
+                display: none; }
+                .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off ul li {
+                  margin: 5px 0; }
+                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off ul li .div-device {
+                    overflow: hidden;
+                    border-radius: 4px;
+                    padding: 4px 3px 5px;
+                    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+                    float: left;
+                    width: 90px;
+                    height: 80px;
+                    margin: 6px 16px 6px 1px;
+                    text-align: center; }
+                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off ul li .div-scence-time {
+                    overflow: hidden;
+                    padding: 4px 3px 5px;
+                    float: left;
+                    width: 100px;
+                    height: 100px;
+                    margin: 6px 16px 6px 1px;
+                    text-align: center;
+                    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+                    border-radius: 5px; }
+                  .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off ul li .div-time-details {
+                    float: left; }
+                    .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off ul li .div-time-details .p-time-on-off {
+                      float: left;
+                      font-size: 17px;
+                      margin: 10px 25px 10px 15px; }
+                      .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off ul li .div-time-details .p-time-on-off span {
+                        font-weight: bold;
+                        font-size: 17px; }
+                        .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off ul li .div-time-details .p-time-on-off span.time-am-pm {
+                          font-size: 13px; }
+                    .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off ul li .div-time-details .p-day-on-off {
+                      font-size: 16px;
+                      margin: 0 15px; }
+                      .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .div-main-background.setting-settime-on-off ul li .div-time-details .p-day-on-off span {
+                        font-weight: bold;
+                        font-size: 17px; }
           .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item.active {
             display: block; }
           .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-on-off-wifi {
@@ -1011,6 +1104,122 @@ header {
               .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-choose-network ul li.item-network.active p {
                 color: #356ad7;
                 font-weight: bold; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-connecting-dswitch {
+            position: relative; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-connecting-dswitch p {
+              margin: 20px 10px 10px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-connecting-dswitch input {
+              width: 100%;
+              border: 0;
+              outline: none;
+              padding: 7px 5px;
+              border-bottom: 2px solid #356ad7;
+              margin-bottom: 40px;
+              font-size: 15px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-wifi-setting .div-connecting-dswitch button {
+              padding: 4px 10px;
+              border-radius: 4px;
+              font-size: 15px;
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              outline: none; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-about-system-device .about-device-details {
+            margin-bottom: 15px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-about-system-device .about-device-details .p-main-right {
+              padding: 0 0 10px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-about-system-device .about-device-details .div-main-background {
+              font-size: 15px; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-about-system-device .div-three-item-system {
+            padding: 5px 2px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-about-system-device .div-three-item-system .the-three-item {
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              text-align: center;
+              padding: 6px 10px;
+              font-size: 17px;
+              background-color: #fff;
+              width: 30%; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-about-system-device .div-three-item-system .the-three-item.item-backup {
+                margin: 0 23px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-item .item-about-system-device .div-three-item-system .the-three-item.item-reset {
+                color: red; }
+        .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right {
+          display: none;
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          width: 400px;
+          height: 340px;
+          overflow: auto;
+          background-color: #fff;
+          border-radius: 8px;
+          padding: 10px 15px;
+          border: 1px solid #ccc; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right > p {
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.8; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device ul.ul-switch-add-all-device {
+            display: none; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device ul li.li-device {
+            overflow: hidden;
+            border-radius: 4px;
+            padding: 4px 3px 5px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            width: 90px;
+            height: 80px;
+            margin: 6px 16px 6px 1px;
+            text-align: center; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device ul li.li-device img {
+              width: 35px;
+              height: 35px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device ul li.li-device p {
+              max-height: 32px;
+              font-size: 14px;
+              display: block;
+              overflow: hidden; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device ul li.li-device.active {
+              box-shadow: 0 0 2px 2px rgba(0, 16, 255, 0.6); }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device ul li.li-device.li-add-device i {
+              color: #ccc;
+              font-size: 45px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device ul li.li-device.li-add-device p.p-add-device {
+              font-size: 14px;
+              font-weight: bold;
+              margin-top: 5px; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device p.p-title-group {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 0 10px; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device p.p-title-group.active {
+              color: #356ad7; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device p.p-title-group.active .fa-chevron-down {
+                display: inline-block; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device p.p-title-group.active .fa-chevron-right {
+                display: none; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-device p.p-title-group i.fa-chevron-down {
+              display: none; }
+          .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-scence {
+            display: none; }
+            .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-scence ul.ul-switch-add-all-scence li.li-scence {
+              display: inline-block;
+              width: 90px;
+              height: 80px;
+              margin: 6px 16px 6px 1px;
+              text-align: center; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-scence ul.ul-switch-add-all-scence li.li-scence p {
+                overflow: hidden;
+                height: 32px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-scence ul.ul-switch-add-all-scence li.li-scence img {
+                width: 50px;
+                height: 50px; }
+              .wrap-content .content-setting .the-setting.setting-right .div-content-setting-right .div-modal-position-right.div-modal-position-right-scence ul.ul-switch-add-all-scence li.li-scence.active p {
+                font-weight: bold;
+                color: #1393ff; }
     .wrap-content .content-setting .the-setting .tittle-setting {
       box-shadow: 0px -10px 20px 0px rgba(181, 173, 173, 0.55) inset;
       border-bottom: 1px solid #b1b1b1;
@@ -1059,27 +1268,28 @@ header {
         display: none; }
         .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-main-background {
           height: 325px; }
-        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-device-setting {
-          overflow: hidden;
-          border-radius: 4px;
-          padding: 4px 3px 5px;
-          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-          float: left;
-          width: 100px;
-          height: 95px;
-          margin: 5px 15px 5px 1px;
-          text-align: center;
-          background-color: #fff; }
-          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-device-setting img {
-            width: 40px;
-            height: 40px; }
-          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-device-setting p {
-            max-height: 32px;
-            font-size: 14px;
-            color: #000;
-            display: block;
-            overflow: auto; }
-        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-content-setting-device {
+        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-left-setting-device {
+          float: left; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-left-setting-device .div-device-setting {
+            overflow: hidden;
+            border-radius: 4px;
+            padding: 4px 3px 5px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+            width: 100px;
+            height: 95px;
+            margin: 5px 15px 15px 1px;
+            text-align: center;
+            background-color: #fff; }
+            .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-left-setting-device .div-device-setting img {
+              width: 40px;
+              height: 40px; }
+            .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-left-setting-device .div-device-setting p {
+              max-height: 32px;
+              font-size: 14px;
+              color: #000;
+              display: block;
+              overflow: auto; }
+        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-right-setting-device {
           overflow: auto;
           border-radius: 4px;
           float: left;
@@ -1088,7 +1298,7 @@ header {
           width: 420px;
           padding: 10px;
           height: 295px; }
-          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-content-setting-device input {
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-right-setting-device input {
             border: 0;
             font-size: 16px;
             width: 375px;
@@ -1097,11 +1307,160 @@ header {
             color: #000;
             border-bottom: 2px solid #356ad7;
             margin-bottom: 15px; }
-          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-content-setting-device p {
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-right-setting-device p {
             padding: 5px 0;
             color: #000;
             font-size: 18px; }
-          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-content-setting-device .some-icon-device img {
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-device .div-right-setting-device .some-icon-device img {
             margin: 8px 11px; }
+      .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-switch {
+        display: none; }
+        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-switch .div-main-background.div-switch-left {
+          width: 160px;
+          float: left;
+          margin-right: 10px;
+          height: 340px; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-switch .div-main-background.div-switch-left p {
+            width: 100%;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.8; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-switch .div-main-background.div-switch-left input {
+            width: 100%;
+            outline: none;
+            padding: 3px;
+            font-size: 15px;
+            margin: 5px 0 25px; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-switch .div-main-background.div-switch-left select {
+            width: 100%;
+            margin: 8px 0;
+            border-radius: 4px;
+            padding: 3px;
+            font-size: 15px;
+            outline: none; }
+        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-switch .div-main-background.div-switch-right {
+          float: left;
+          width: 400px;
+          height: 340px; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-switch .div-main-background.div-switch-right > p {
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.8; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-switch .div-main-background.div-switch-right ul.ul-switch-add-device {
+            margin-bottom: 15px; }
+      .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-group-scence {
+        display: none; }
+        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-group-scence .div-main-background.div-switch-left {
+          width: 160px;
+          float: left;
+          margin-right: 10px;
+          height: 340px; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-group-scence .div-main-background.div-switch-left p {
+            width: 100%;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.8; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-group-scence .div-main-background.div-switch-left input {
+            width: 100%;
+            outline: none;
+            padding: 3px;
+            font-size: 15px;
+            margin: 5px 0 25px; }
+        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-group-scence .div-main-background.div-switch-right {
+          float: left;
+          width: 400px;
+          height: 340px; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-group-scence .div-main-background.div-switch-right > p {
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.8; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-group-scence .div-main-background.div-switch-right ul.ul-switch-add-device {
+            margin-bottom: 15px; }
+      .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence {
+        display: none; }
+        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-left {
+          width: 160px;
+          float: left;
+          margin-right: 10px;
+          height: 340px; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-left p {
+            width: 100%;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.8; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-left input {
+            width: 100%;
+            outline: none;
+            padding: 3px;
+            font-size: 15px;
+            margin: 5px 0 15px; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-left .div-image-list-scence {
+            text-align: center; }
+            .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-left .div-image-list-scence p {
+              padding: 5px 0; }
+        .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right {
+          float: left;
+          width: 400px;
+          height: 340px; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right > p {
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.8; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right ul.ul-list-group-scence-out li {
+            padding: 0px 5px 5px;
+            font-size: 16px; }
+            .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right ul.ul-list-group-scence-out li.edit-list-group-scence {
+              color: red;
+              font-size: 17px; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right.div-list-icon-scence {
+            display: none;
+            position: absolute;
+            top: 15px;
+            right: 15px; }
+            .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right.div-list-icon-scence .ul-list-icon-scence img {
+              margin: 10px 18px;
+              width: 50px;
+              height: 50px; }
+          .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right.div-list-group-scence {
+            display: none;
+            position: absolute;
+            top: 15px;
+            right: 15px; }
+            .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right.div-list-group-scence .ul-list-group-scence li {
+              position: relative;
+              padding: 5px;
+              font-size: 17px;
+              line-height: 1.5; }
+              .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right.div-list-group-scence .ul-list-group-scence li img {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: none; }
+              .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right.div-list-group-scence .ul-list-group-scence li.active {
+                color: #356ad7;
+                font-weight: bold; }
+                .wrap-content .content-setting .the-setting .modal-main-setting.modal-setting-list-scence .div-main-background.div-switch-right.div-list-group-scence .ul-list-group-scence li.active img {
+                  display: block; }
+      .wrap-content .content-setting .the-setting .modal-main-setting .div-settime-on-off p {
+        line-height: 1.2 !important; }
+      .wrap-content .content-setting .the-setting .modal-main-setting .div-settime-on-off .p-settime-on-off {
+        font-size: 17px !important;
+        font-weight: bold;
+        padding: 5px;
+        color: #9e9e9e; }
+      .wrap-content .content-setting .the-setting .modal-main-setting .div-settime-on-off .p-time-on-off {
+        font-size: 18px !important;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        padding: 0;
+        color: #000; }
+        .wrap-content .content-setting .the-setting .modal-main-setting .div-settime-on-off .p-time-on-off span {
+          font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */
